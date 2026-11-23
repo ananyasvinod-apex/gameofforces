@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Game of Forces | Physics, simplified through sport</title>
+  <meta name="description" content="Game of Forces explains the physics behind sport in plain language, starting with LAPTHESIS: F1 technical upgrades before every Grand Prix." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body data-page="home" data-base="">
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="11" cy="21" r="5" fill="#c8ff2e"/><path d="M11 21 L26 6" stroke="#f4f4f6" stroke-width="2.6" stroke-linecap="round"/><path d="M18 6 H26 V14" fill="none" stroke="#f4f4f6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="wordmark">Game<span class="of">of</span>Forces</span>
+      </a>
+      <nav><a href="index.html" aria-current="page">Home</a><a href="lapthesis/index.html">LAPTHESIS</a><a href="winning-formula/index.html">Winning Formula</a><a href="about.html">About</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <svg class="hero-vectors" viewBox="0 0 460 340" aria-hidden="true">
+        <defs>
+          <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c8ff2e"/></marker>
+          <marker id="ahg" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#9a9aa6"/></marker>
+        </defs>
+        <path d="M20 320 Q 200 -40 440 300" fill="none" stroke="#2f2f3a" stroke-width="2" stroke-dasharray="6 8"/>
+        <circle cx="210" cy="150" r="22" fill="#15151a" stroke="#f4f4f6" stroke-width="2.5"/>
+        <line x1="232" y1="150" x2="330" y2="150" stroke="#c8ff2e" stroke-width="3" marker-end="url(#ah)"/>
+        <line x1="210" y1="172" x2="210" y2="262" stroke="#9a9aa6" stroke-width="3" marker-end="url(#ahg)"/>
+        <line x1="194" y1="134" x2="140" y2="96" stroke="#9a9aa6" stroke-width="3" marker-end="url(#ahg)"/>
+        <text x="340" y="155" fill="#c8ff2e" font-family="JetBrains Mono, monospace" font-size="16">v</text>
+        <text x="220" y="280" fill="#9a9aa6" font-family="JetBrains Mono, monospace" font-size="16">mg</text>
+        <text x="104" y="92" fill="#9a9aa6" font-family="JetBrains Mono, monospace" font-size="16">F<tspan font-size="11" dy="4">drag</tspan></text>
+      </svg>
+      <div class="wrap">
+        <p class="eyebrow">// F = ma, played out on the field</p>
+        <h1>Physics,<br />simplified<br />through <em>sport.</em></h1>
+        <p class="lede">Downforce, drag, grip, spin, momentum. The forces that decide races and matches, explained without the textbook.</p>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="toolbar"><h2 class="section-title">The series</h2></div>
+      <div id="series" class="series-grid"></div>
+    </section>
+
+    <section class="wrap">
+      <div class="toolbar"><h2 class="section-title">Latest from every series</h2></div>
+      <div id="grid" class="grid"></div>
+      <p id="empty" class="empty" hidden>No posts yet.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap"><b>GAME OF FORCES</b> · <span id="year"></span> · An independent blog, not affiliated with any sports league or team.</div>
+  </footer>
+
+  <script src="posts.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
